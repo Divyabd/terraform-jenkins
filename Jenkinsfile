@@ -11,6 +11,7 @@ pipeline{
         }
           stage("terraforrm initt"){
             steps{
+                echo "init started"
                 sh 'terraform init'
             }
         }
